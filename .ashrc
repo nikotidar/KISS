@@ -1,0 +1,6 @@
+#!/bin/sh
+
+case $- in *i*) ;; *) return; esac
+
+alias gj="git add .; git commit -m 'docs: update'; git push"
+alias ls="ls --color=auto --group-directories-first"
