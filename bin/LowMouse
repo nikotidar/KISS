@@ -1,0 +1,4 @@
+#!/bin/sh
+xinput --set-prop "Synaptics TM2749-001" "Device Enabled" 0
+xinput --set-prop "TPPS/2 IBM TrackPoint" "Device Enabled" 0
+xinput --set-prop "Logitech USB Optical Mouse" "libinput Accel Speed" -0.75
