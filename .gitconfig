@@ -1,0 +1,37 @@
+[core]
+	filemode = true
+	excludesfile = ~/.gitignore
+	#pager = diff-so-fancy | less --tabs=4 -RFX
+[user]
+	email = niko.tidar@outlook.com
+	name = Niko Tidar Lantang Perkasa
+	signingkey = 72F072F73F23C24E
+[push]
+	default = simple
+[color]
+	ui = true
+[alias]
+	ls = log --oneline --graph --decorate
+	graph = log --graph --pretty=format:\
+"%C(yellow)%H%C(green)%d%C(reset)%n%x20%cd%n%x20%cn%x20(%ce)%n%x20%s%n"
+[credential "https://github.com"]
+	username = nikotidar
+
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+[color "diff"]
+	meta = yellow
+	frag = magenta bold
+	commit = yellow bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+[diff-so-fancy]
+	markEmptyLines = false
+	changeHunkIndicators = false
+	stripLeadingSymbols = false
+	useUnicodeRuler = false
+	rulerWidth = 47

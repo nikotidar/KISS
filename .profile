@@ -1,3 +1,4 @@
+# misc
 export ENV=~/.ashrc
 export PS1='» '
 export LESSHISTFILE=-
@@ -7,3 +8,6 @@ export EDITOR="$VISUAL"
 
 # keymap
 loadkmap < $HOME/.us.bmap
+
+# gpg
+export GPG_TTY=$(tty)
