@@ -1,0 +1,49 @@
+# SNEDING MAIL
+set envelope_from=yes
+set from="Randall Tux  <me@rndtx.id>"
+set use_from=yes
+set edit_headers=yes
+set smtp_url="smtps://me@rndtx.id@mail.rndtx.id/:465/"
+set smtp_pass="xxx"
+set ssl_force_tls = yes
+set spoolfile = "=INBOX"
+set record = "=Sent Items"
+set postponed = "=Drafts"
+set sort = threads
+set message_cachedir = ~/.mutt/messagecache
+set imap_check_subscribed
+set imap_keepalive = 300
+set mail_check = 60
+set ssl_starttls = yes
+set ssl_force_tls = yes
+
+# RECEIVING MAIL
+set imap_user = "me@rndtx.id"
+set imap_pass = "xxx"
+set folder = "imaps://me@rndtx.id@mail.rndtx.id:993"
+set spoolfile="imaps://mail.rndtx.id/INBOX"
+set postponed="imaps://mail.rndtx.id/Drafts"
+set record="imaps://mail.rndtx.id/Sent"
+set message_cachedir=~/.mutt/cache/bodies
+set certificate_file=~/.mutt/certificates
+set move = no
+
+# COLOR
+color normal white default
+color attachment red default
+color hdrdefault cyan default
+color indicator brightyellow default
+color markers brightred default
+color quoted cyan default
+color quoted1 magenta default
+color quoted2 blue default
+color signature yellow default
+color status default default
+color tilde blue default
+color tree brightred default
+color header brightyellow default ^From:
+color header yellow default ^To:
+color header brightcyan default ^Date
+color header yellow default ^Cc:
+color header brightgreen default ^Subject:
+color header brightcyan default ^X-TRASH:
